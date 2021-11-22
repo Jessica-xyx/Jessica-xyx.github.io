@@ -18,7 +18,11 @@ git add --all
 git commit -m "Firs Push"
 git push -u origin master
 ```
-
+# 运行博客
+修改后在命令行（cmd）中输入
+```
+bundle exec jekyll serve
+```
 # 遇到的问题
 1. jekyll serve命令，不能连接到127.0.0.1:4000错误
 
@@ -33,3 +37,37 @@ bundle add webrick
 ```
 
 后就可以解决这个问题了。
+
+
+
+2.git push超时
+
+关代理，把网络设置中的自动检测设置打开
+
+![photo]({{site.url}}/assets/img/proxy.png)
+
+
+
+
+
+# 参考资料
+
+1. ruby下载及镜像源
+> https://blog.csdn.net/qq_42451091/article/details/105483983
+> https://www.cnblogs.com/Sunshine-boy/p/4801366.html
+> https://blog.csdn.net/qq_33648530/article/details/82735325
+
+2. 安装jekyll
+> https://blog.csdn.net/qq_27032631/article/details/106156088
+3. jekyll的版本问题导致无法访问127.0.0.1:4000
+> https://blog.csdn.net/huyuchengus/article/details/121002469
+4. 博客教程：
+> 如何在 GitHub 上写博客？ - 少数派的回答 - 知乎 https://www.zhihu.com/question/20962496/answer/677815713
+
+5. 博客中插入图片：
+> Jekyll博客中如何用相对路径来加载图片？ - Connor的回答 - 知乎 https://www.zhihu.com/question/31123165/answer/1213800887
+6. git push 超时：
+> https://blog.csdn.net/yy339452689/article/details/104040279	
+> https://blog.csdn.net/u011476390/article/details/93411139
+> https://blog.csdn.net/xiaoxiamiqianqian/article/details/118439514
+> https://blog.csdn.net/weixin_41010198/article/details/87929622
