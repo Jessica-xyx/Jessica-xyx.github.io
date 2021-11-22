@@ -1,0 +1,35 @@
+---
+layout: post
+title: 搭建博客遇到的问题
+---
+
+# 搭建博客
+
+注册GitHub，建立博客仓库，设置ssh等
+
+下载git,ruby,jekyll
+
+
+
+git push命令
+
+```git
+git add --all
+git commit -m "Firs Push"
+git push -u origin master
+```
+
+# 遇到的问题
+1. jekyll serve命令，不能连接到127.0.0.1:4000错误
+
+jekyll的版本问题：从 Ruby 3.0 开始 webrick 已经不在绑定到 Ruby 中了，请参考链接： [Ruby 3.0.0 Released](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/) 中的说明。
+
+webrick 需要手动进行添加。
+
+添加的命令为：
+
+```csharp
+bundle add webrick
+```
+
+后就可以解决这个问题了。
