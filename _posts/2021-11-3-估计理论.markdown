@@ -1,8 +1,15 @@
+---
+layout: post
+title: 估计理论
+---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+> <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # 估计理论
 
 对未知确定性参数的估计。
 
-![image-20211031141611076](C:\Users\JESSICA\AppData\Roaming\Typora\typora-user-images\image-20211031141611076.png)
+ ![photo]({{site.url}}/assets/img/estimate.png)
 
 # 无偏估计
 
@@ -45,15 +52,17 @@ $$
 
 # 贝叶斯估计
 
-![image-20211031142751566](C:\Users\JESSICA\AppData\Roaming\Typora\typora-user-images\image-20211031142751566.png)
+ ![photo]({{site.url}}/assets/img/estimate2.png)
 
-![image-20211031143508564](C:\Users\JESSICA\AppData\Roaming\Typora\typora-user-images\image-20211031143508564.png)
+ ![photo]({{site.url}}/assets/img/eg5-2-1.png)
+
+
 
 # 似然
 
-![image-20211031143153041](C:\Users\JESSICA\AppData\Roaming\Typora\typora-user-images\image-20211031143153041.png)
+![photo]({{site.url}}/assets/img/estimate3.png)
 
-![image-20211031143302545](C:\Users\JESSICA\AppData\Roaming\Typora\typora-user-images\image-20211031143302545.png)
+![photo]({{site.url}}/assets/img/estimate4.png)
 
 y=kA+w
 
@@ -169,7 +178,7 @@ $$
 
 # 矢量估计
 
-![image-20211031201508389](C:\Users\JESSICA\AppData\Roaming\Typora\typora-user-images\image-20211031201508389.png)
+![photo]({{site.url}}/assets/img/estimate5.png)
 
 # LMMSE
 
@@ -202,4 +211,5 @@ $$
 
 
 
-对于均匀分布![img](file:///D:\1355839266\Image\C2C\FC902483A4FB332E92CD702DBF95E5E6.jpg)
+对于均匀分布
+ ![photo]({{site.url}}/assets/img/junyun.jpg)

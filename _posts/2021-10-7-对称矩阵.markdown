@@ -1,3 +1,9 @@
+---
+layout: post
+title: 对称矩阵
+---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+> <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 # 奇异值分解
 
 定义矩阵A的SVD为$$A = U \Sigma V^{T}$$。其中$$U \in \mathbb{R}^{m \times m}$$，$$\Sigma \in \mathbb{R}^{m \times n}$$，Σ是一个对角矩阵，主对角线上的每个元素都称为奇异值，$$V \in \mathbb{R}^{n \times n}$$。U和V都是酉矩阵。
