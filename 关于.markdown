@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: 关于
+permalink: /关于/
 ---
 
 Jessica，北京交通大学，计算机科学与技术专业大四在读，研究生方向为无源物联网。

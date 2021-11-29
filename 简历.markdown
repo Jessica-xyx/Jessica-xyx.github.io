@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Resume
-permalink: /resume/
+title: 简历
+permalink: /简历/
 ---
 
 测试页面
