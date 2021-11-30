@@ -4,4 +4,3 @@ title: 日记
 permalink: /日记/
 ---
 
-permalink: /2021/11/29/jekyll默认生成的博客里没有_layout文件夹.html

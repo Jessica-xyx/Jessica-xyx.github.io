@@ -3,6 +3,7 @@ layout: post
 title: 搭建博客遇到的问题
 ---
 
+
 # 搭建博客
 
 1. 注册GitHub，建立博客仓库，设置ssh等
@@ -47,10 +48,15 @@ bundle add webrick
 ```
 
 * 插入图片
-
 ```
  ![photo]({{site.url}}/assets/img/proxy.png)
 ```
+
+* 插入内部链接指向自己的文章
+```
+[展示在网页上的标题名称]({% post_url 2021-10-7-Symmetric matrix %})
+```
+* _posts文件夹下的文章，名字要是全英文，不然会出现乱七八糟的错误，比如无法链接
 # 参考资料
 
 1. ruby下载及镜像源
