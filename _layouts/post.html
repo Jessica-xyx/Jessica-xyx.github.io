@@ -23,5 +23,27 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
+  <-- 引入 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <-- 添加一个容器-->
+  <div id="gitalk-container"></div>
+
+  <-- 生成 gitalk 插件-->
+  var gitalk = new Gitalk({
+  clientID: '009cedc7b95f37ea41a3', //Client ID
+
+  clientSecret: '7495972e238ed29e70499034b8c4c935d54cd139', //Client Secret
+
+  repo: 'Jessica-xyx.github.io',//仓库名称
+  owner: 'Jessica-xyx',//仓库拥有者
+  admin: ['Jessica-xyx'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
