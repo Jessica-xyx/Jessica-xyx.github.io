@@ -30,6 +30,7 @@ github_username:  Jessica-xyx
 # Build settings
 theme: minima
 markdown: kramdown
+intensedebate_comments: true
 #theme: bulma-clean-theme
 #remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
