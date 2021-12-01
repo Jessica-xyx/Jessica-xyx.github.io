@@ -9,6 +9,7 @@ title: 添加gittalk评论系统
    - Homepage URL 必须是博客仓库的域名（https://github.com/Jessica-xyx/Jessica-xyx.github.io）。
    - Authorization callback URL 必须是博客的域名（https://jessica-xyx.github.io/)
 3. 在_layout/xxx.html 里添加
+
 ```html
 <!-- Link Gitalk 的支持文件  -->
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
