@@ -1,4 +1,4 @@
 ---
 layout: post
-title: 添加gitment评论系统
+title: 添加gittalk评论系统
 ---
