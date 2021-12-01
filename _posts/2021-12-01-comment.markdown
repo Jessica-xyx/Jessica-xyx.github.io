@@ -3,6 +3,8 @@ layout: post
 title: 添加gittalk评论系统
 ---
 
+# 由于gittalk等第三方插件存在较大的安全隐患，本博客已弃用第三方评论功能。如果您有任何关于博客内容的相关讨论，欢迎前往https://github.com/Jessica-xyx/Jessica-xyx.github.io/discussions与我交流或发送邮件至1355839266@qq.com
+
 1. 创建一个专门用来放评论的仓库，setting中要开启issue
 2. 在Settings-Developer settings-OAuth Apps下新建application，记住ID和secret
    - Application name 随便填。
