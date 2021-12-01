@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 研究生学习
-permalink: /graduate class/
+title: 目录
+permalink: /index/
 ---
 
 ## 《应用随机过程——概率模型导论》
