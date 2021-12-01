@@ -2,3 +2,30 @@
 layout: post
 title: 添加gittalk评论系统
 ---
+
+1. 创建一个专门用来放评论的仓库，setting中要开启issue
+2. 在Settings-Developer settings-OAuth Apps下新建application，记住ID和secret
+   - Application name 随便填。
+   - Homepage URL 必须是博客仓库的域名（https://github.com/Jessica-xyx/Jessica-xyx.github.io）。
+   - Authorization callback URL 必须是博客的域名（https://jessica-xyx.github.io/)
+3. 在_layout/xxx.html 里添加
+```html
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+        clientID: '复制刚才生成的clientID',
+        clientSecret: '复制刚才生成的clientSecret',
+        repo: '新建的评论仓库名',
+        owner: 'GitHub的用户名',
+        admin: ['Github的用户名'],
+        id:decodeURI(window.location.pathname),
+
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
+```
