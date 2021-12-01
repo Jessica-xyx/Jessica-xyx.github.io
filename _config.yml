@@ -30,7 +30,12 @@ github_username:  Jessica-xyx
 # Build settings
 theme: minima
 markdown: kramdown
-intensedebate_comments: true
+intensedebate_comments: false
+
+#gitment
+comment_gitment_repo: Jessica-xyx.github.io
+comment_gitment_clientId: 009cedc7b95f37ea41a3
+comment_gitment_clientSecret: 7495972e238ed29e70499034b8c4c935d54cd139
 #theme: bulma-clean-theme
 #remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
