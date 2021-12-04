@@ -1,0 +1,102 @@
+---
+layout: post
+title: An Introduction to Convex Polytopes
+---
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+最近快把搜索引擎翻烂了才找到这么一本介绍凸多胞形的书，而且还没有翻译，勉强翻译学一下吧。
+
+注：deepl机翻+本人外行校正，不确定的地方用原文标注了。
+
+**打扰了，这本书是GTM090。**
+
+# 引言
+
+ 一般来说，组合理论涉及不同维度（顶点、边等）的面的数量。一个有名的例子是欧拉定理，对于3维凸多胞形（多面体），顶点的数量是$$f_0$$，边的数量是$$f_1$$，面的数量是$$f_2$$。可表示为$$f_0-f_1+f_2=2$$
+
+第一章：凸集；讲的是d维凸集。其中的基本概念有：凸壳、凸集的相对内部，支持超平面，封闭凸集的面和极性。(在没有触及的凸性理论的基本概念中，我们提到了凸锥和凸函数）。
+
+第二章：凸多胞形；把凸集理论应用到凸多胞形上，在第15节中，我们研究由多面体的顶点和边决定的图形。
+
+第三章：凸多胞形上的组合学；欧拉公式在d维空间的表示。
+
+
+
+> 附维基百科定义
+> 多胞形是一类由 平边（flat sides）构成的几何结构。多胞形可以存在于任意维中。多边形为二维多胞形，多面体为三维多胞形，也可以延伸到三维以上的空间，如多胞体即为四维多胞形。
+>
+> 在这里，"平边 "是指(k+1)-多面体的边由k-多面体组成，这些多面体可能有(k-1)-多面体的共同点。例如，一个二维多边形是一个2-多面体，一个三维多面体是一个3-多面体。
+>
+> 当提到n度空间下的多胞形时，常会用n-多胞形的名称来表示，因此多边形可称为2-多胞形，多面体可称为3-多胞形，多胞体即为4-多胞形。
+
+
+
+# 第一章：凸集（Convex Sets）
+
+## 第一节 $$\mathbb{R}^\mathbb{d}$$的仿射结构
+
+凸多胞形理论来源于仿射几何学，从某种意义上说，研究凸集的正确框架是欧几里得空间的概念，即一个有限维度的实仿生空间，其底层线性空间配备有一个内积。然而，只用更具体的空间$$\mathbb{R}^\mathbb{d}$$工作并没有本质上的一般性损失；因此，一切都将在$$\mathbb{R}^\mathbb{d}$$中进行。我们将假设读者熟悉$$\mathbb{R}^\mathbb{d}$$的标准线性理论，包括诸如子空间、线性独立、维度和线性映射等概念。我们还假定读者熟悉$$\mathbb{R}^\mathbb{d}$$的标准内积，包括诱导范数II II（induced norm），以及基本的拓扑学概念，如R的一个子集M的内部int M（interior int M）、闭合cl M（closure cl M）和边界bd M（the boundary bd M）。
+
+
+
+本节的主要目的是对$$\mathbb{R}^\mathbb{d}$$的仿生结构做一个简要的概览。我们在这里没有给出证明；请读者自己提出证明，主要是通过将仿生理论中的语句还原为线性理论中的语句。重要的是，读者要对$$\mathbb{R}^\mathbb{d}$$的仿生结构有宾至如归的感觉。
+
+
+
+**（ps：两段话没几个字看得懂的）**
+
+
+
+对于$$\mathbb{d} \in \mathbb{N} $$，我们用$$\mathbb{R}^\mathbb{d}$$来表示关于实数$$\alpha_1,...,\alpha_d$$的所有d元组$$x=(\alpha_1,...,\alpha_d)$$的集合。$$\mathbb{R}^1$$用$$\mathbb{R}$$来表示，并定义
+
+$$\mathbb{R}^0:=\{0\}$$
+
+我们回顾一下关于$$\mathbb{R}^\mathbb{d}$$线性结构的一些基本事实。装备上了标准的线性运算，$$\mathbb{R}^\mathbb{d}$$是一个线性空间。当$$\mathbb{R}^\mathbb{d}$$的线性结构处于前台时(in the foreground)，$$\mathbb{R}^\mathbb{d}$$的元素被称为向量。零矢量用$$o$$来表示。
+
+
+
+一个线性子空间是$$\mathbb{R}^\mathbb{d}$$的一个非空子集L，使得
+
+
+
+$$\text { (a) } \lambda_{1} x_{1}+\lambda_{2} x_{2} \text { is in } L \text { for all } x_{1}, x_{2} \in L \text { and all } \lambda_{1}, \lambda_{2} \in \mathbb{R} \text {. }$$
+
+
+
+$$\mathbb{R}^\mathbb{d}$$中的矢量$$x_1,...,x_n$$的线性组合是一个矢量，其形式为$$\lambda_1x_1+...+\lambda_nx_n$$其中$$\lambda_1,...\lambda_n$$都在R中。
+线性组合的定义有一定的模糊性.（这段太长了英文能看懂我就不翻译了）
+
+
+
+![photo]({{site.url}}/assets/img/cp1-1.png)
+
+
+
+（a）和这句话等价：（b）L中任何一个向量的线性组合又都在L中。
+
+
+
+**（这一块太难了还是先跳了吧...）**
+
+## 第二节 凸集
+
+$$\mathbb{R}^\mathbb{d}$$的一个子集C，如果$$\lambda_1x_1+\lambda_2x_2$$属于C，当$$x_1,x_2 \in C 并且所有\lambda_1,\lambda_2 \in \mathbb{R}，且\lambda_1+\lambda_2=1,\lambda_1,\lambda_2 >=0$$，这个子集C将被称为凸集。
+
+当$$x_1,x_2$$是$$\mathbb{R}^\mathbb{d}$$中不同的点时，集合
+
+$$\begin{aligned}
+\left[x_{1}, x_{2}\right] &:=\left\{\lambda_{1} x_{1}+\lambda_{2} x_{2} \mid \lambda_{1}, \lambda_{2} \geq 0, \lambda_{1}+\lambda_{2}=1\right\} \\
+&=\left\{(1-\lambda) x_{1}+\lambda x_{2} \mid \lambda \in[0,1]\right\}
+\end{aligned}$$
+
+叫$$x_1,x_2$$的closed segment。
+
+
+
+convex combination是指$$\lambda_{1} x_{1}+\cdots+\lambda_{n} x_{n}, \text { where } \lambda_{1}+\cdots+\lambda_{n}=1，\lambda_1,...,\lambda_n>=0$$。convex combination也是affine combination。
+
+
+
+**定理2.1 $$\mathbb{R}^\mathbb{d}$$的一个子集C是凸的，当且仅当来自C的任何凸组合的点也在C中。**
