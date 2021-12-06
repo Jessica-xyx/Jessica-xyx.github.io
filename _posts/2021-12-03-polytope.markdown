@@ -100,3 +100,4 @@ convex combination是指$$\lambda_{1} x_{1}+\cdots+\lambda_{n} x_{n}, \text { wh
 
 
 **定理2.1 $$\mathbb{R}^\mathbb{d}$$的一个子集C是凸的，当且仅当来自C的任何凸组合的点也在C中。**
+
