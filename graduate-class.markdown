@@ -10,7 +10,7 @@ permalink: /index/
 
 ## 信号与系统
 
-
+* [信号的奇偶分量]({% post_url 2021-12-06-oddeven %})
 
 ## 算法
 

@@ -37,6 +37,8 @@ bundle add webrick
 * git push超时
   关代理，把网络设置中的自动检测设置打开
   ![photo]({{site.url}}/assets/img/proxy.png)
+  
+  **改hosts文件吧，比较快**，https://blog.csdn.net/CynthiaLLL/article/details/106611164
 
 **这是个玄学问题，有时候关了也能push上去，奥义是多push几次。。。**
 
@@ -56,7 +58,15 @@ bundle add webrick
 ```
 [展示在网页上的标题名称]({% post_url 2021-10-7-Symmetric matrix %})
 ```
+* 插入外链，markdown支持html语法。
+```html
+<a herf="">标题</a>
+```
+
+
 * _posts文件夹下的文章，名字要是全英文，不然会出现乱七八糟的错误，比如无法链接
+
+
 # 参考资料
 
 1. ruby下载及镜像源
@@ -78,3 +88,5 @@ bundle add webrick
 > https://blog.csdn.net/u011476390/article/details/93411139
 > https://blog.csdn.net/xiaoxiamiqianqian/article/details/118439514
 > https://blog.csdn.net/weixin_41010198/article/details/87929622
+>
+> 终极解决方案：https://blog.csdn.net/CynthiaLLL/article/details/106611164
