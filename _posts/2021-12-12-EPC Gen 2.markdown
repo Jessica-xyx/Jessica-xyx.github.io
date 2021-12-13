@@ -1,0 +1,12 @@
+---
+layout : post
+title : EPC Gen 2
+---
+
+
+
+tag memory在逻辑上分为图6-19所示的四个不同的存储器组，每个存储器组可包含零个或多个存储字。
+
+![photo]({{site.url}}/assets/img/tag memory.png)
+
+Reser
