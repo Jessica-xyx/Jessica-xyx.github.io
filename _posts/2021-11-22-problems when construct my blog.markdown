@@ -3,7 +3,6 @@ layout: post
 title: 搭建博客遇到的问题
 ---
 
-
 # 搭建博客
 
 1. 注册GitHub，建立博客仓库，设置ssh等
