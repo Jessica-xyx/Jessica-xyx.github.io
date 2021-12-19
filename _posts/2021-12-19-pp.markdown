@@ -1,0 +1,10 @@
+---
+layout : post
+title : 无线频谱和标准
+---
+
+![image-20211219185324333](/assets/img/image-20211219185324333.png)
+
+![image-20211219185553032](/assets/img/image-20211219185553032.png)
+
+![image-20211219185744115](/assets/img/image-20211219185744115.png)
