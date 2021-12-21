@@ -2,6 +2,9 @@
 layout : post
 title : Asynchronous Reception of 2 RFID Tags   
 ---
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 | 论文题目     | Asynchronous Reception of 2 RFID Tags                        |
 | ------------ | ------------------------------------------------------------ |
 | 作者及单位   | Konstantinos Skyvalakis and Aggelos Bletsas , Senior Member, IEEE |
@@ -9,6 +12,8 @@ title : Asynchronous Reception of 2 RFID Tags
 | 方法及创新点 |                                                              |
 | 相关结果     |                                                              |
 | 收获         |                                                              |
+
+<a href="https://www.aliyundrive.com/s/FcRoVaZUYWt" class="external" target="_blank">点击这里查看论文（阿里云盘）</a>
 
 #### 名词解释
 
@@ -28,4 +33,59 @@ RFID标签正在快速发展，标签分离的研究也促进了商业的发展�
 
 ## 系统模型
 
-大规模通道路径损耗模型
+本文用的是RFID的Monostatic模型 
+
+![image-20211220232905900](/assets/img/image-20211220232905900.png)
+
+大规模通道路径损耗模型和小规模莱斯flat衰弱信道模型（留疑待查）
+
+![image-20211221003613993](/assets/img/image-20211221003613993.png)
+
+![image-20211221003714632](/assets/img/image-20211221003714632.png)
+
+## 信号模型
+
+![image-20211221003812885](/assets/img/image-20211221003812885.png)
+
+![image-20211221003833881](/assets/img/image-20211221003833881.png)
+
+![image-20211221003926361](/assets/img/image-20211221003926361.png)
+
+公式7到公式8的过程👇
+
+![QQ20211221003242](/assets/img/QQ20211221003242.png)
+
+**说白了系统模型和信号模型里这么一堆公式都是为了推出公式8**
+
+
+
+## 问题转换
+
+信号对应关系
+
+![image-20211221153305944](/assets/img/image-20211221153305944.png)
+
+Table1 的上图的推导过程
+
+![QQ20211221152631](/assets/img/QQ20211221152631.png)
+
+![QQ20211221152814](/assets/img/QQ20211221152814.png)
+
+信号的能量计算公式：
+
+![QQ20211221160635](/assets/img/QQ20211221160635.jpg)
+
+## 检测技术
+
+维特比前向传播计算过程：
+
+![QQ20211221214833](/assets/img/QQ20211221214833.png)
+
+## DIGITAL LINK HOUSEKEEPING
+
+
+
+
+
+
+
