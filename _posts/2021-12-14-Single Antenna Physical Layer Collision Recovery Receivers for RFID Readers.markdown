@@ -10,24 +10,3 @@ title : Single Antenna Physical Layer Collision Recovery Receivers for RFID Read
 | 相关结果     |                                                              |
 | 收获         |                                                              |
 
-
-<HR>
-针对这篇论文我做了个ppt，欢迎下载查看，感谢您的批评指正！
-
-<a href="https://www.aliyundrive.com/s/BVhUm3r7uNz" class="external" target="_blank">点击这里查看ppt（阿里云盘）</a>
-<HR>
-
-
-![photo]({{site.url}}/assets/img/1-0.jpg)
-
-![photo]({{site.url}}/assets/img/1-1.jpg)
-
-![photo]({{site.url}}/assets/img/1-2.jpg)
-
-![photo]({{site.url}}/assets/img/1-3.jpg)
-
-![photo]({{site.url}}/assets/img/1-4.jpg)
-
-![photo]({{site.url}}/assets/img/1-5.jpg)
-
-![photo]({{site.url}}/assets/img/1-6.jpg)
