@@ -1,0 +1,31 @@
+---
+layout : post
+title : 将一维数组转变成二维数组
+---
+
+<a href="https://leetcode-cn.com/problems/convert-1d-array-into-2d-array/"> leetcode地址</a>
+
+ ![photo]({{site.url}}/assets/img/2022.png)
+
+```C++
+class Solution {
+public:
+    vector<vector<int>> construct2DArray(vector<int>& original, int m, int n) {
+
+        int number = original.size();
+        if(m*n != number)
+            return {};
+        vector<vector<int>> newArray(m,vector<int>(n,0));
+        int p=0;
+        for(int i=0;i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                newArray[i][j]=original[i*n+j];
+            }
+        }
+        return newArray;
+    }
+};
+```
+

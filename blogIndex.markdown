@@ -16,7 +16,7 @@ permalink: /index/
 ## RFID资料
 * [FM0 编码]({% post_url 2021-12-14-FM0 encoding %})
 
-## 算法
+## 刷题&算法&leetcode
 
 **计算几何专题**
 
@@ -24,6 +24,13 @@ permalink: /index/
 
 **剑指offer专题**
 * [两个栈实现一个队列]({% post_url 2021-12-20-lianggezhanshixianyigeduilie %})
+* [包含min函数的栈]({% post_url 2022-01-01-offer30 %})
+
+**2022每日一题**
+
+* [将一维数组转变成二维数组]({% post_url 2022-01-01-202211 %})
+
+
 
 ## 论文研读
 
@@ -36,3 +43,8 @@ permalink: /index/
 哥德史密斯的书，中文版。
 * [现有无线系统]({% post_url 2021-12-18-fengwo %})
 * [无线频谱和标准]({% post_url 2021-12-19-pp %})
+
+##  信号估计/检测模型
+* [y=Hx+w]({% post_url 2021-12-30-y=Hx+w %})
+* [y[n]=hx[n]+w[n]]({% post_url 2021-12-30-y[n]=hx[n]+w[n] %})
+* [x[n]=A+w[n]]({% post_url 2021-12-30-x[n]=A+w[n] %})
