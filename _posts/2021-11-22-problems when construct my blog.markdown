@@ -89,3 +89,79 @@ bundle add webrick
 > https://blog.csdn.net/weixin_41010198/article/details/87929622
 >
 > 终极解决方案：https://blog.csdn.net/CynthiaLLL/article/details/106611164
+
+
+
+Ont.ResetEnable = 1;
+Ont.DisableTr069 = 0;
+Ont.CurUserName = "user";
+Ont.CurLoginUser = 1;
+Ont.StrOntModel = "H10g-02";
+Ont.displayInternetForUser = "0";
+Ont.DisableLoidCfg = 1;
+Ont.ProvinceCode = "XJ_11";
+Ont.SsidWebControl = 1;
+Ont.LogoutTimeout = 300000;
+Ont.LanNum  = 3;
+Ont.UsbNum  = 1;
+Ont.WifiNum = 1;
+Ont.SsidNum = 4;
+Ont.PotsNum = 1;
+Ont.ProtocolVer = 3;
+Ont.Webdevicename = "H10g-12";
+Ont.dev_uplink_type = "Gpon";
+Ont.QuickAuto = 0;
+Ont.SWVER = "V1.1.0.6";
+Ont.SWHZ4VER = "H10g-12";
+Ont.mesh_support = 0;
+Ont.rtk_smart_support = 0;
+Ont.bandsteering_support = 0;
+Ont.dot11k_support = 1;
+Ont.dot11v_support = 1;
+Ont.ft_support = 0;
+
+
+var over;
+var loid;
+var password;
+var registered = 0;
+var btn_disabled = 0;
+over = 0;
+registered = 0;
+loid = "";
+password = "";
+gpon_pwd = "";
+provinceType = 0;
+
+var Tr069Config = {};
+var LoidConfig = {};
+var UserInfoCfg = {};
+
+var loid_enable = 1;
+Tr069Config.AcsURL = "http://enterprisegw.cluster.local:8000/acs";
+Tr069Config.AcsUser = "cpe";
+Tr069Config.AcsPwd = "cpe";
+Tr069Config.ConnReqUrl = "";
+Tr069Config.ConnReqUser = "RMS";
+Tr069Config.ConnReqPwd = "RMS";
+Tr069Config.Inform = "checked";
+Tr069Config.InformInterval = "43200";
+Tr069Config.showSoap = "0"
+Tr069Config.DisConReq = "0"
+Tr069Config.OltAuth = "";
+Tr069Config.Tr069Enable = "1";
+Tr069Config.MdwUrl = "";
+Tr069Config.SslEnable = "0";
+Tr069Config.Sslcrtstatus = "0";
+Tr069Config.Sslpemstatus = "0";
+
+
+LoidConfig.loid = "";
+LoidConfig.password = "";
+LoidConfig.preserv_previous_loid = "";
+
+UserInfoCfg.loid = "";
+UserInfoCfg.password = "aDm8H%MdA";
+
+- 
+  D42493CMCC583D2342
