@@ -1,7 +1,11 @@
 ---
 layout: page
-title: 简历
-permalink: /简历/
+title: Todo
+permalink: /Todo/
 ---
 
-测试页面
+- [ ] react
+- [ ] js
+- [ ] python设计模式
+- [ ] https
+- [ ] hadoop

@@ -1,12 +1,10 @@
 ---
 layout: page
-title: 留言板
+title: 碎碎念
 permalink: /board
 ---
 
-这个留言板并没有留言功能:)
-
-如果您有任何关于博客内容的相关讨论，欢迎前往<a href="https://github.com/Jessica-xyx/Jessica-xyx.github.io/discussions" class="external" target="_blank">这里</a> 与我交流或发送邮件至1355839266@qq.com。
+如果您有任何关于博客内容的相关讨论，欢迎前往<a href="https://github.com/Jessica-xyx/Jessica-xyx.github.io/discussions" class="external" target="_blank">这里</a> 与我交流或发送邮件至xieyixuancs@163.com
 
 <p> </p>
 以前别人总问我：干活累还是读书累？一直不知道怎么回答。直到遇见一帮工人卸货，他们擦着汗，有说有笑，不停的推卸和整理。我突然明白了答案：不快乐才是最累的。

@@ -1,0 +1,38 @@
+---
+layout: post
+title: linux命令
+
+---
+
+# chmod
+
+* 使用chmod命令对文件的权限进行设置和更改。
+
+  sudo chmod 777 -R xxx (更改文件夹及其子文件夹权限为777)
+
+  sudo chmod 600 ××× (只有所有者有读和写的权限)
+
+  sudo chmod 644 ××× (所有者有读和写的权限，组用户只有读的权限)
+
+  sudo chmod 700 ××× (只有所有者有读和写以及执行的权限)
+
+  sudo chmod 666 ××× (每个人都有读和写的权限)
+
+  sudo chmod 777 ××× (每个人都有读和写以及执行的权限
+
+# cat
+
+* cat命令主要用来实现查看文件、创建文件、及合并、追加文件内容等功能。
+```
+cat text1.txt >> text2.txt
+```
+把text1.txt的内容追加到text2.txt后面，中间有空格<br>
+
+![image-20220521163329297](/assets/img/linux-cat-3.png)
+text1.txt<br>
+
+![photo]({{site.url}}/assets/img/linux-cat-2.png)
+text2.txt<br>
+
+![photo]({{site.url}}/assets/img/linux-cat-1.png)
+cat后的text2.txt<br>
