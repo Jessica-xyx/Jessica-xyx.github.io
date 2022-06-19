@@ -1,0 +1,11 @@
+---
+layout : post
+title : 强化学习论文摘录
+---
+
+# 描述强化学习
+
+>  As an important class of machine learning methods, **RL aims to solve uncertain decision-making problems by interacting with the environment and near-optimal or suboptimal policies can be obtained in a data-driven way** [24].
+
+Jun Wu, Xin Xu, Pengcheng Zhang, Chunming Liu, A novel multi-agent reinforcement learning approach for job scheduling in Grid computing, Future Generation Computer Systems,
+Volume 27, Issue 5, 2011, Pages 430-439, ISSN 0167-739X, https://doi.org/10.1016/j.future.2010.10.009. (https://www.sciencedirect.com/science/article/pii/S0167739X10002025)
