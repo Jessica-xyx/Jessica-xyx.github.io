@@ -4,7 +4,7 @@ title: Todo
 permalink: /Todo/
 ---
 
- 博客更新有延迟 也可以来notion看看 <a href="https://level-candle-e96.notion.site/2022-7eb1898997654caba4a9bfef4c54229f" class="external" target="_blank">我的notion</a> 
+ 博客更新有延迟 也可以来notion看看 <a href="https://level-candle-e96.notion.site/f2bf8021bfa24ce4aec5d4f090f09cd8?v=9514a7d6d56c4578ac47142778cfd557" class="external" target="_blank">我的notion</a> 
 
 - [ ] react
 - [ ] js
