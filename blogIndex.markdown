@@ -48,3 +48,6 @@ permalink: /index/
 * [y=Hx+w]({% post_url 2021-12-30-y=Hx+w %})
 * [y[n]=hx[n]+w[n]]({% post_url 2021-12-30-y[n]=hx[n]+w[n] %})
 * [x[n]=A+w[n]]({% post_url 2021-12-30-x[n]=A+w[n] %})
+
+##  深度学习2022暑期课程
+* [安装pytorch]({% post_url 2022-07-23-cuda+cudnn_install %})
