@@ -6,9 +6,11 @@ permalink: /index/
 ## <center>深度学习</center>
 ###  深度学习2022暑期课程
 * [安装pytorch]({% post_url 2022-07-23-cuda+cudnn_install %})
+* [实验一]({% post_url 2022-07-24-lab1 %})
 * [python中的lambda]({% post_url 2022-07-29-python_lambda %})
 * [pytorch中改变张量形状：torch.view()、torch.squeeze() / torch.unsqueeze()、torch.permute()]({% post_url 2022-07-30-pytorch-resize %})
 * [pytorch中的张量]({% post_url 2022-07-30-pytorch-zhangliang %})
+* [python中的shuffle]({% post_url 2022-07-31-python-shuffle %}) 
 
 
 

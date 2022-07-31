@@ -4,14 +4,18 @@ title: 关于我
 permalink: /关于我/
 ---
 
-努力学习各种技术中，目前想从事开发工作。以后想出国看看。爱好绘画、弹吉他。
+努力学习各种技术中。以后想出国看看。爱好绘画、弹吉他。
+
+**理想**工作优先级：算法>开发>测开，北京的房价实在是太太太太高了，感觉以后不会留在北京了QAQ
+
+立一个巨大的flag：数学和技术，两手都要抓，两手都要硬。
+
+搞钱！！！！
 
  <a href="https://level-candle-e96.notion.site/f2bf8021bfa24ce4aec5d4f090f09cd8?v=9514a7d6d56c4578ac47142778cfd557" class="external" target="_blank">我的notion</a> 
 
 
 # 邮箱
-
-18251181@bjtu.edu.cn
 
 xieyixuancs@163.com
 
