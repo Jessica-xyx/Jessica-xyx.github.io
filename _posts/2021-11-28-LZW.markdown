@@ -1,0 +1,206 @@
+---
+layout: post
+title: LZW算法
+---
+
+```c++
+#include <iostream>
+#include <vector>
+#include <map>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+
+	string iniSequence;
+	cin >> iniSequence;
+	string waitToOut = "";
+	vector<string> senderASCII(256, "");
+
+	int length = iniSequence.size();
+
+	vector<int> LZWout;
+	senderASCII[97] = "a";
+	senderASCII[98] = "b";
+	senderASCII[99] = "c";
+	senderASCII[100] = "d";
+	senderASCII[255] = "zEND";
+	cout << "----------------------------发送端--------------------------" << endl;
+	int i = 0;
+	string temp = "";
+	while (i != length)
+	{
+		temp = waitToOut + iniSequence[i]; // S+c
+		vector<string>::iterator tempPointer = find(senderASCII.begin(), senderASCII.end(), temp);
+		if (tempPointer != senderASCII.end()) //在字典中
+		{
+			waitToOut = temp;
+		}
+		else
+		{
+			vector<string>::iterator sPointer = find(senderASCII.begin(), senderASCII.end(), waitToOut);
+			int sASCII = distance(senderASCII.begin(), sPointer);
+			LZWout.push_back(sASCII);
+			cout << sASCII << endl;     //发送S的编码
+			senderASCII.push_back(temp);   // S+c加入字符串表
+			waitToOut = iniSequence[i]; // S=c
+		}
+		i++;
+	}
+	vector<string>::iterator leftPointer = find(senderASCII.begin(), senderASCII.end(), waitToOut);
+	int leftS = distance(senderASCII.begin(), leftPointer);
+	LZWout.push_back(leftS);
+	cout << leftS << endl;     //发送S的编码
+	cout << "----------------------------接收端--------------------------" << endl;
+	//接收端
+	vector<string> receiveASCII(256, "");
+	receiveASCII[97] = "a";
+	receiveASCII[98] = "b";
+	receiveASCII[99] = "c";
+	receiveASCII[100] = "d";
+	receiveASCII[255] = "zEND";
+
+	vector<string> LZWdecode;
+	LZWdecode.push_back(receiveASCII[LZWout[0]]);
+	cout << receiveASCII[LZWout[0]] << endl;
+	int j = 1;
+	int len = LZWout.size();
+	int receiveASCIILength = receiveASCII.size();
+
+	char pastFirstWord = receiveASCII[LZWout[0]][0];
+	string pastWord = receiveASCII[LZWout[0]];
+	char currentFirstWord;
+	string currentWord;
+	while (j != len)
+	{
+		if (LZWout[j] < receiveASCIILength)//code在字典中
+		{
+			LZWdecode.push_back(receiveASCII[LZWout[j]]);
+			cout << receiveASCII[LZWout[j]] << endl;
+			currentFirstWord = receiveASCII[LZWout[j]][0];
+			currentWord = receiveASCII[LZWout[j]];
+		}
+		else
+		{
+			currentWord = pastWord + pastFirstWord;
+			currentFirstWord = currentWord[0];
+			LZWdecode.push_back(currentWord);
+			cout << currentWord << endl;
+		}
+		receiveASCII.push_back(pastWord+currentFirstWord);
+
+		pastWord = currentWord;
+		pastFirstWord = currentFirstWord;
+		j++;
+		receiveASCIILength = receiveASCII.size();
+	}
+
+
+
+	system("pause");
+	return 0;
+}
+```
+
+
+
+
+
+判断【当前待输出子序列+当前符号】是否在字符串表中
+
+```c++
+当前符号是第一个字符；
+do{
+    if(【当前待输出子序列+当前符号】在字符表中)
+    {
+    	当前待输出子序列=当前待输出子序列+当前符号；
+    }
+else
+    {
+        将【当前待输出子序列+当前符号】加入字符表
+        输出 【当前待输出子序列】
+        当前待输出子序列=当前符号；
+    }
+    当前符号指向下一位；
+}while(字符串读取完毕)
+    输出【剩余字符】；
+
+```
+
+例子：abab
+
+字符表状态改变流程
+
+| 字符串           | a    | b    | a    | b    |
+| ---------------- | ---- | ---- | ---- | ---- |
+| 当前符号         | 👆    |      |      |      |
+| 当前待输出子序列 | null |      |      |      |
+| 字符串           | a    | b    | a    | b    |
+| ---------------- | ---- | ---- | ---- | ---- |
+| 当前符号         | 👆    |      |      |      |
+| 当前待输出子序列 | a    |      |      |      |
+
+
+
+| 字符串           | a    | b    | a    | b    |
+| ---------------- | ---- | ---- | ---- | ---- |
+| 当前符号         |      | 👆    |      |      |
+| 当前待输出子序列 | a    |      |      |      |
+
+
+
+| 字符                   | ASCII码（十进制） |
+| ---------------------- | ----------------- |
+| NUL(null)              | 0                 |
+| SOH(start of headline) | 1                 |
+| STX (start of text)    | 2                 |
+|                        | ...               |
+| A                      | 65                |
+| B                      | B                 |
+| C                      | C                 |
+|                        | ...               |
+| a                      | 97                |
+| b                      | 98                |
+| c                      | 99                |
+|                        | ...               |
+|                        | 255               |
+
+
+
+
+
+
+
+
+| B    | A    | B    | A    | A    | B    | A    | A    | A    |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|      |      |      |      |      |      |      |      |      |
+
+| 字符串           | B    | A    | B    | A    | A    | B    | A    | A    | A    |
+| ---------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 当前字符         | 👆    |      |      |      |      |      |      |      |      |
+| 当前待输出子序列 |      |      |      |      |      |      |      |      |      |
+|                  |      |      |      |      |      |      |      |      |      |
+
+维护一个字符串表
+
+| 字符                   | ASCII码（十进制） |
+| ---------------------- | ----------------- |
+| NUL(null)              | 0                 |
+| SOH(start of headline) | 1                 |
+| STX (start of text)    | 2                 |
+|                        | ...               |
+| 65                     | A                 |
+| 66                     | B                 |
+| 67                     | C                 |
+|                        | ...               |
+|                        | 255               |
+
+abcabcabcabcabcabca
+
+
+
+
+

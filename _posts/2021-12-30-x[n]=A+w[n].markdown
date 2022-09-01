@@ -1,0 +1,46 @@
+---
+layout : post
+title : x[n]=A+w[n]
+---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+A是要估计的常数，$$w[n]\sim N(0,σ^2)$$，接收到的信号是x[n]
+
+问题：如何估计A？
+
+方法：最大似然ML准则
+
+
+
+#### 1、只发了一个x[n]的情况
+
+$$max\;p(x[0]|A)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x[0]-A)^2}{2\sigma^2}}$$
+
+$$\Longrightarrow max \;e^{-\frac{(x[0]-A)^2}{2\sigma^2}}$$
+
+$$\Longrightarrow min \;e^{(x[0]-A)^2}$$
+
+**$$\hat{A}=x[0]$$**
+
+
+
+#### 2、发了n个x[n]的情况
+
+$$max\;p(x[n]|A)=max\; p(x[0]|A)p(x[1]|A)...p(x[n-1]|A)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x[0]-A)^2}{2\sigma^2}}\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x[1]-A)^2}{2\sigma^2}}...\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x[n-1]-A)^2}{2\sigma^2}}$$
+
+$$\Longrightarrow max \;e^{-\frac{(x[0]-A)^2}{2\sigma^2}}e^{-\frac{(x[1]-A)^2}{2\sigma^2}}...e^{-\frac{(x[n-1]-A)^2}{2\sigma^2}}$$
+
+$$\Longrightarrow max \;-[\frac{(x[0]-A)^2}{2\sigma^2}+\frac{(x[1]-A)^2}{2\sigma^2}+...+\frac{(x[n-1]-A)^2}{2\sigma^2}]$$
+
+$$\Longrightarrow min \;[\frac{(x[0]-A)^2}{2\sigma^2}+\frac{(x[1]-A)^2}{2\sigma^2}+...+\frac{(x[n-1]-A)^2}{2\sigma^2}]=\sum_{i = 0}^{n-1} (x[i]-A)^2$$
+
+$$\Longrightarrow min \;[(x[0]-A)^2+(x[1]-A)^2+...+(x[n-1]-A)^2]=min \;\sum_{i = 0}^{n-1} (x[i]-A)^2$$
+
+A是未知数，对A求导
+
+$$-2\sum_{i = 0}^{n-1} (x[i]-A)=0$$
+
+$$\sum_{i = 0}^{n-1} (x[i]-A)=0$$
+
+**$$\hat{A}=\frac{\sum_{i = 0}^{n-1}x[i]}{n}$$**

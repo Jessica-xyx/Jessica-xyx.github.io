@@ -1,0 +1,64 @@
+---
+layout : post
+title : 中心极限定理
+---
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+随机变量$$x_1,x_2, x_3,x_4,…, x_{100}$$相互独立。
+
+①假设$$X_1,X_2 \sim  U[0,1]$$ 。$$Y= X_1+X_2$$, 请问y服从什么分布？
+
+$$x_1,x_2$$的概率密度是
+
+
+$$
+f(x_1)=f(x_2)=
+\begin{cases}
+1,0<x<1\\
+0, else
+\end{cases}
+$$
+
+$$Y=X_1+X_2\;\;\;(0<Y<2)$$
+
+$$F(y)=P(Y<y)=P(X_1+X_2<y)=P(X_1<y-X_2)$$
+
+$$
+F(y)=
+\begin{cases}
+\frac{y^2}{2},0<y<1\\
+-\frac{1}{2}y^2+2y-1,1<y<2\\
+1, y>2
+\end{cases}
+$$
+
+y的概率密度为
+
+$$
+f(y)=
+\begin{cases}
+y,0<y<1\\
+-y+2,1<y<2\\
+0, y>2
+\end{cases}
+$$
+
+
+
+![image-20220101172430072](/assets/img/junyun.png)
+
+②假设$$x_1,x_2,x_3,x_4,…, x_{100} \sim U[0,1]$$ 。$$z= x_1+x_2+…+x_{99}+x_{100}$$, 请问z服从什么分布？
+
+正态分布（中心极限定理）
+
+![image-20220101194304473](/assets/img/image-20220101194304473.png)
+
+③假设$$x_1\sim N(0,1), x_2 \sim N(0,1)$$ 。$$u= x_1+x_2$$, 请问u服从什么分布？
+
+$$u\sim N(0,2)$$
+
+④假设$$x_1,x_2, x_3,x_4,…, x_{100} \sim N(0,1)$$。$$v= x_1+x_2+…+x_{99}+x_{100}$$, 请问v服从什么分布？
+
+$$v\sim N(0,100)$$
