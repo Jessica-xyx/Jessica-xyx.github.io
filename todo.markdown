@@ -10,11 +10,23 @@ permalink: /Todo/
 
  博客更新有延迟 也可以来notion看看 <a href="https://level-candle-e96.notion.site/f2bf8021bfa24ce4aec5d4f090f09cd8?v=9514a7d6d56c4578ac47142778cfd557" target="_blank">我的notion</a> 
 
-- [ ] react
-- [ ] js（2022/7/31跟进：在学了在学了）
-- [ ] python设计模式
-- [ ] https
-- [ ] hadoop
+2022/9/12
+
+- [ ] 深度学习作业，复习深度学习...我认为这学期的目标是不要迟交作业:)
+- [ ] 矩阵分析作业
+- [ ] **看论文！！！！！**
+- [ ] Multi-Agent A* for Parallel and Distributed Systems  这论文挺有意思 多智能体A*算法？浅看了一下好像和多智能体强化学习的多智能体不是一个东西
+- [ ] 编译原理改作业
+
+
+
+
+2022/7/31
+
+- [ ] jekyll工作流
+- [ ] **三篇强化学习论文（紧急且重要）**
+- [ ] 复盘实习
+
 
 2022年6月19日
 
@@ -24,8 +36,13 @@ permalink: /Todo/
 - [ ] mangDB
 - [x] 分布式作业
 
-2022/7/31
 
-- [ ] jekyll工作流
-- [ ] **三篇强化学习论文（紧急且重要）**
-- [ ] 复盘实习
+
+- [ ] - [ ] react
+- [ ] js（2022/7/31跟进：在学了在学了）
+- [ ] python设计模式
+- [ ] https
+- [ ] hadoop
+
+
+

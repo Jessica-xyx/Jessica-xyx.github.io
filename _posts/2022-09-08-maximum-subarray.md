@@ -3,7 +3,7 @@ layout: post
 title: 最大子数组和--O(n)
 ---
 
-<a herf = "https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/" > leetcode地址</a>
+https://leetcode.cn/problems/maximum-subarray/
 
 用动态规划做，dp[i]表示**包含nums[i]的最大子数组和**，maxn是整个序列的最大子数组和。复杂度O(n)。
 
