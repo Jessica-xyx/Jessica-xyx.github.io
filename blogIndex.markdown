@@ -8,7 +8,13 @@ permalink: /index/
 ###  高级强化学习2022秋季课程
 * [高级强化学习——马尔可夫决策过程]({% post_url 2022-09-05-qianghuaxuexi1 %})
 
+### 学习进展
+* [POMDP]({% post_url 2022-09-15-pomdp %})
+* [Multi-agent]({% post_url 2022-09-15-multiagent %})
+* [NSGA]({% post_url 2022-09-10-NSGA %})
+
 ### 个人总结
+
 * [RL学习-未完结]({% post_url 2022-08-16-rl %})
 * [任务调度问题中的强化学习算法分类-未完结]({% post_url 2022-06-19-RL_classification %})
 * [强化学习论文摘录-未完结]({% post_url 2022-06-19-RL %})

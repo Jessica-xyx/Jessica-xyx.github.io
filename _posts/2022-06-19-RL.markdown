@@ -17,6 +17,10 @@ Li, H., Huang, J., Wang, B. et al. Weighted double deep Q-network based reinforc
 
 
 
+A reinforcement-learning agent is modeled to perform sequential decision-making by interacting with the environment.
+
+
+
 # 好句
 
 > However, the question of how best to exploit the opportunity for centralised learning **remains open**.

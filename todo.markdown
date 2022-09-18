@@ -8,15 +8,13 @@ permalink: /Todo/
 
 
 
- 博客更新有延迟 也可以来notion看看 <a href="https://level-candle-e96.notion.site/f2bf8021bfa24ce4aec5d4f090f09cd8?v=9514a7d6d56c4578ac47142778cfd557" target="_blank">我的notion</a> 
-
 2022/9/12
 
 - [ ] 深度学习作业，复习深度学习...我认为这学期的目标是不要迟交作业:)
 - [ ] 矩阵分析作业
 - [ ] **看论文！！！！！**
 - [ ] Multi-Agent A* for Parallel and Distributed Systems  这论文挺有意思 多智能体A*算法？浅看了一下好像和多智能体强化学习的多智能体不是一个东西
-- [ ] 编译原理改作业
+- [x] 编译原理改作业
 
 
 
