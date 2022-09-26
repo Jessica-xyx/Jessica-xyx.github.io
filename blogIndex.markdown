@@ -7,6 +7,9 @@ permalink: /index/
 ## <center>强化学习</center>
 ###  高级强化学习2022秋季课程
 * [高级强化学习——马尔可夫决策过程]({% post_url 2022-09-05-qianghuaxuexi1 %})
+* [高级强化学习——无模型强化学习]({% post_url 2022-09-26-qianghuaxuexi2 %})
+* [ubuntu安装强化学习环境]({% post_url 2022-09-19-RLEnv %})
+* [vmware16pro安装ubuntu18]({% post_url 2022-09-24-ubuntu18 %})
 
 ### 学习进展
 * [POMDP]({% post_url 2022-09-15-pomdp %})
@@ -32,13 +35,13 @@ permalink: /index/
 
 ## <center>刷题</center>
 
-###  刷题&算法&leetcode
 
 * [两个栈实现一个队列]({% post_url 2021-12-20-lianggezhanshixianyigeduilie %})
 * [包含min函数的栈]({% post_url 2022-01-01-offer30 %})
 * [将一维数组转变成二维数组]({% post_url 2022-01-01-202211 %})
 * [最大子数组和--O(n)]({% post_url 2022-09-08-maximum-subarray %})
-
+* [洛谷 P1218 \[USACO1.5\]特殊的质数肋骨 Superprime Rib]({% post_url 2022-09-26-luoguP1218 %})
+* [洛谷 P1029 \[NOIP2001 普及组\] 最大公约数和最小公倍数问题]({% post_url 2022-09-26-luoguR87620438 %})
 
 
 ## <center>通信</center>
