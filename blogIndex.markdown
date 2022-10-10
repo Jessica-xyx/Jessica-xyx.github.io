@@ -8,6 +8,7 @@ permalink: /index/
 ###  高级强化学习2022秋季课程
 * [高级强化学习——马尔可夫决策过程]({% post_url 2022-09-05-qianghuaxuexi1 %})
 * [高级强化学习——无模型强化学习]({% post_url 2022-09-26-qianghuaxuexi2 %})
+* [高级强化学习——多步自助与近似逼近法]({% post_url 2022-10-10-qianghuaxuexi3 %})
 * [ubuntu安装强化学习环境]({% post_url 2022-09-19-RLEnv %})
 * [vmware16pro安装ubuntu18]({% post_url 2022-09-24-ubuntu18 %})
 
@@ -21,6 +22,24 @@ permalink: /index/
 * [RL学习-未完结]({% post_url 2022-08-16-rl %})
 * [任务调度问题中的强化学习算法分类-未完结]({% post_url 2022-06-19-RL_classification %})
 * [强化学习论文摘录-未完结]({% post_url 2022-06-19-RL %})
+
+
+## <center>数学</center>
+###  矩阵分析
+
+### 随机过程
+
+### 计算共形几何
+
+
+## <center>分布式</center>
+* [搭建分布式环境]({% post_url 2022-10-01-centos %})
+
+
+## <center>机器学习</center>
+
+
+
 
 ## <center>深度学习</center>
 ###  深度学习2022暑期课程
