@@ -26,8 +26,18 @@ permalink: /index/
 
 ## <center>数学</center>
 ###  矩阵分析
+* [线性空间]({% post_url 2022-10-23-xianxingkongjian %})
+
+
+
+
 
 ### 随机过程
+
+#### 《应用随机过程——概率模型导论》
+* 1.24 [Bertrand's ballot theorem]({% post_url 2021-11-30-Bertrand's ballot theorem %})
+
+
 
 ### 计算共形几何
 
@@ -59,14 +69,12 @@ permalink: /index/
 * [包含min函数的栈]({% post_url 2022-01-01-offer30 %})
 * [将一维数组转变成二维数组]({% post_url 2022-01-01-202211 %})
 * [最大子数组和--O(n)]({% post_url 2022-09-08-maximum-subarray %})
-* [洛谷 P1218 \[USACO1.5\]特殊的质数肋骨 Superprime Rib]({% post_url 2022-09-26-luoguP1218 %})
-* [洛谷 P1029 \[NOIP2001 普及组\] 最大公约数和最小公倍数问题]({% post_url 2022-09-26-luoguR87620438 %})
-
+* [洛谷 P1218 USACO1.5 特殊的质数肋骨 Superprime Rib]({% post_url 2022-09-26-luoguP1218 %})
+* [洛谷 P1029 NOIP2001 普及组 最大公约数和最小公倍数问题]({% post_url 2022-09-26-luoguR87620438 %})
+* [Vijos-清帝之惑之顺治-动态规划]({% post_url 2022-10-19-1011 %})
 
 ## <center>通信</center>
-### 《应用随机过程——概率模型导论》
 
-* 1.24 [Bertrand's ballot theorem]({% post_url 2021-11-30-Bertrand's ballot theorem %})
 
 ### 信号与系统
 

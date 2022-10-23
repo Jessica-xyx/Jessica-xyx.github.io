@@ -2,6 +2,9 @@
 layout: post
 title: 高级强化学习——多步自助与近似逼近法
 ---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 * 蒙特卡洛要采样一整个eposide，TD算法只采样一步，为了用更多的数据，可以采用多步时序差分算法。并且步数和学习率需要平衡。
 * 当状态-动作空间非常大或者是连续空间时，单纯构造Q表来维护就不太合适了，动作空间非常大会导致维数灾难，并且无法为连续空间构造一个离散的Q表。
