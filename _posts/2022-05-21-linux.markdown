@@ -36,3 +36,27 @@ text2.txt<br>
 
 ![photo]({{site.url}}/assets/img/linux-cat-1.png)
 cat后的text2.txt<br>
+
+## scp
+
+通过ssh远程传输文件
+
+scp -P 端口号 要传输的文件 服务器用户名@服务器ip:要上传到服务器上的文件地址
+
+下面这个只是个示例
+
+```
+scp -P 123 .\feature.py xyx@123.123.123.123:/home/Data/test
+```
+
+## free -h
+
+查看内存使用情况
+
+## df -h
+
+查看存储使用情况
+
+## sudo dmesg | tail -7
+
+查看被killed的原因
