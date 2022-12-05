@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog
+category: blog
+---
+
+{% include blog_sub_nav.html %}
+
+<section class="inner">
+  <div class="pidex">
+    <blockquote>
+      <p>见到你很高兴</p>
+    </blockquote>
+  <div>
+  <ul class="posts">
+    {% for post in site.posts %}
+	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+	  {% if year != y %}
+		{% assign year = y %}
+		<span class="listing-seperator">{{ y }}</span>
+	  {% endif %}
+
+    <div class='post-link-in-posts'>    
+      <span class='date'>{{ post.date | date: "%b %d" }}</span>
+      <a class='article' href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <span class="comment">
+          <!-- &nbsp(热度:<a class="comment_hot" href="{{ site.url }}{{ post.url }}#disqus_thread">7</a>) -->
+      </span>
+  		<div class="tag-in-index-post">
+          <i class="fa fa-tags"></i>
+            <div class="tag">
+  		        {{ post.tags | first }}
+            </div>
+      </div>
+    </div>
+    {% endfor %}
+  </ul>
+</section>
+
+<script id="dsq-count-scr" src="https://nijiazhi.disqus.com/count.js" async></script>

@@ -29,6 +29,9 @@ github_username:  Jessica-xyx
 contact: "https://github.com/Jessica-xyx/Jessica-xyx.github.io/discussions"
 # Build settings
 theme: minima
+# 自定义post url
+permalink: /blog/:title.html
+timezone: Asia/Chongqing
 
 markdown: kramdown
 intensedebate_comments: false
