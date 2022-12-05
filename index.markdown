@@ -96,7 +96,7 @@ description: 见到你很高兴
   <p>
     <ul class="show-list">
       <li>Email: <a href="https://mail.163.com/">xieyixuancs@163.com</a></li>
-
+      <li>Github: <a href="https://github.com/Jessica-xyx">github.com/Jessica-xyx</a></li>
     </ul>
   </p>
 </section>
@@ -108,7 +108,7 @@ description: 见到你很高兴
       <li>Email: <a href="https://mail.qq.com/">954142793@qq.com</a></li>
       <li>Google Scholar: <a href="https://scholar.google.com/citations?user=hHi46EcAAAAJ">Jiazhi Ni</a></li>
       <li>Kaggle: <a href="https://www.Kaggle.com/nijiazhi">Andy</a></li>
-      <li>Github: <a href="https://github.com/nijiazhi">github.com/nijiazhi</a></li>
+      <li>Github: <a href="https://github.com/Jessica-xyx">github.com/Jessica-xyx</a></li>
       <li>知乎：<a href="https://www.zhihu.com/people/andy-3-36/activities">写代码的段子手</a></li>
       <li>码云Git：<a href="https://gitee.com/nijiazhi/events">gitee.com/nijiazhi</a></li>
       <li>开源中国：<a href="https://my.oschina.net/njz">njz_andy</a></li>
