@@ -1,6 +1,8 @@
 ---
 layout: post
 title: python中的lambda
+categories: [深度学习]
+tags: python
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

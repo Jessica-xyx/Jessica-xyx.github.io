@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 最大子数组和--O(n)
+categories: [算法与刷题]
+tags: 动态规划
 ---
 
 https://leetcode.cn/problems/maximum-subarray/

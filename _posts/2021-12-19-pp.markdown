@@ -1,6 +1,8 @@
 ---
 layout : post
 title : 无线频谱和标准
+categories: [信号]
+tags: 
 ---
 
 ![image-20211219185324333](/assets/img/image-20211219185324333.png)

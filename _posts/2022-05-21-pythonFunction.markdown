@@ -1,6 +1,8 @@
 ---
 layout : post
 title : python的函数
+categories: [python]
+tags: 
 ---
 
 

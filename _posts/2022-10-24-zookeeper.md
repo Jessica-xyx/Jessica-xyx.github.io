@@ -1,6 +1,8 @@
 ---
 layout: post
 title: zookeeper
+categories: [分布式]
+tags: 
 ---
 
 

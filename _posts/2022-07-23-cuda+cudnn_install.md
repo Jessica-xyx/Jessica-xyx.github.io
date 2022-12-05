@@ -1,6 +1,8 @@
 ---
 layout: post
 title: CUDA11.4+Windows11安装pytorch
+categories: [深度学习]
+tags: 
 ---
 
 前期准备：安装anaconda、python、vs等

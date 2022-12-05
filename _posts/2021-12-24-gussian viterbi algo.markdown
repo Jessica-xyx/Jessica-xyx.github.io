@@ -1,6 +1,8 @@
 ---
 layout : post
 title : 从高斯白噪声到维特比算法
+categories: [估计理论]
+tags: 
 ---
 
 ## 线性

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: An Introduction to Convex Polytopes
+categories: [凸多胞形]
+tags: 
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 最近快把搜索引擎翻烂了才找到这么一本介绍凸多胞形的书，而且还没有翻译，勉强翻译学一下吧。
 
 注：deepl机翻+本人外行校正，不确定的地方用原文标注了。

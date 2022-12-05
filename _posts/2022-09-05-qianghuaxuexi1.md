@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 高级强化学习——马尔可夫决策过程
+categories: [强化学习]
+tags: 
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 只列举了一些新学的，ppt上的内容就不抄过来了。
 
 1. 随机过程和概率论的区别：是否有时间的概念。

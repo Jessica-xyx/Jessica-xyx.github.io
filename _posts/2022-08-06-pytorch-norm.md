@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 正则化与向量范数
+categories: [深度学习]
+tags: 
 ---
 
 

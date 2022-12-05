@@ -1,6 +1,8 @@
 ---
 layout : post
-title : Asynchronous Reception of 2 RFID Tags   
+title : Asynchronous Reception of 2 RFID Tags 
+categories: [信号]
+tags: 
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: linux命令
-
+categories: [linux]
+tags: 
 ---
 
 # chmod

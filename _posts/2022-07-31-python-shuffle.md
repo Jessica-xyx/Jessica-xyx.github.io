@@ -1,6 +1,8 @@
 ---
 layout: post
 title: python中的shuffle
+categories: [深度学习]
+tags: python
 ---
 
 打乱列表的元素顺序

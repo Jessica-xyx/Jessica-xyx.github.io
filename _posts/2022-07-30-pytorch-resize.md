@@ -1,6 +1,8 @@
 ---
 layout: post
 title: pytorch中改变张量形状：torch.view()、torch.squeeze() / torch.unsqueeze()、torch.permute()
+categories: [深度学习]
+tags: python
 ---
 
 # torch.view()

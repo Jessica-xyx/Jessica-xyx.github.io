@@ -1,6 +1,8 @@
 ---
 layout: post
 title: pytorch中的张量
+categories: [深度学习]
+tags: python
 ---
 
 # torch.Tensor

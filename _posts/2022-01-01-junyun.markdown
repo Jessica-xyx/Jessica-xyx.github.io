@@ -1,11 +1,12 @@
 ---
 layout : post
 title : 中心极限定理
+categories: [概率论]
+tags: 
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 随机变量$$x_1,x_2, x_3,x_4,…, x_{100}$$相互独立。
 
 ①假设$$X_1,X_2 \sim  U[0,1]$$ 。$$Y= X_1+X_2$$, 请问y服从什么分布？

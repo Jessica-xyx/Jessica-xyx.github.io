@@ -1,10 +1,11 @@
 ---
 layout : post
 title : x[n]=A+w[n]
+categories: [估计理论]
+tags: 
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 A是要估计的常数，$$w[n]\sim N(0,σ^2)$$，接收到的信号是x[n]
 
 问题：如何估计A？

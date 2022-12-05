@@ -1,6 +1,8 @@
 ---
 layout : post
 title : FM0 编码
+categories: [信号]
+tags: 
 ---
 
 标签用FM0或Miller来编码反向散射数据。

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: 高级强化学习——深度强化学习
+categories: [强化学习]
+tags: 
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
   ![photo]({{site.url}}/assets/img/深度强化学习.png)
 
 学习dueling DQN有感：往往很有效的办法的核心思想是最简单的，dueling DQN其实就是一点概率上的想法，把要估计的Q拆成了均值V和优势函数，但是带来的效果却非常好，该作者也获得了ICML best student paper。

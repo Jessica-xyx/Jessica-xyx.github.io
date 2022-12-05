@@ -1,6 +1,8 @@
 ---
 layout : post
 title : 将一维数组转变成二维数组
+categories: [算法与刷题]
+tags: 
 ---
 
 <a href="https://leetcode-cn.com/problems/convert-1d-array-into-2d-array/"> leetcode地址</a>

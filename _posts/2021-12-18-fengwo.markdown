@@ -1,6 +1,8 @@
 ---
 layout : post
 title : 现有无线系统
+categories: [信号]
+tags: 
 ---
 
 ![photo](/assets/img/fw-0.png)

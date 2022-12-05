@@ -1,6 +1,8 @@
 ---
 layout : post
 title : EPC Gen 2
+categories: [信号]
+tags: 
 ---
 
 

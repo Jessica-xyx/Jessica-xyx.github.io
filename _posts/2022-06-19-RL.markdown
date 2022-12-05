@@ -1,6 +1,8 @@
 ---
 layout : post
 title : 强化学习论文摘录
+categories: [强化学习]
+tags: 
 ---
 
 # 描述强化学习

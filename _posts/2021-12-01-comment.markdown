@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 添加gittalk评论系统
+categories: [博客]
+tags: 
 ---
 
 # 由于gittalk等第三方插件存在较大的安全隐患，本博客已弃用第三方评论功能。如果您有任何关于博客内容的相关讨论，欢迎前往<a href="https://github.com/Jessica-xyx/Jessica-xyx.github.io/discussions" class="external" target="_blank">这里</a>与我交流或发送邮件至1355839266@qq.com

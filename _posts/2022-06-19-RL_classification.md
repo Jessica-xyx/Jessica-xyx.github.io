@@ -1,6 +1,8 @@
 ---
 layout : post
 title : 任务调度问题中的强化学习算法分类
+categories: [强化学习]
+tags: 
 ---
 
 强化学习给任务调度问题提供了一种model-free的算法。

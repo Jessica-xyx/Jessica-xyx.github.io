@@ -1,6 +1,8 @@
 ---
 layout: post
 title: multi-agent综述论文
+categories: [强化学习]
+tags: MARL
 ---
 
 * awsl 

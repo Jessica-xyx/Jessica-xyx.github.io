@@ -1,7 +1,8 @@
 ---
 layout : post
 title : 并行算法的设计基础
-
+categories: [分布式]
+tags: 
 ---
 
 ## 并行语句

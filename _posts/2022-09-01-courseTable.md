@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 课程表小程序设计
+categories: [小程序]
+tags: 
 ---
 
 小程序名字：消息记录（暂时随便取的
