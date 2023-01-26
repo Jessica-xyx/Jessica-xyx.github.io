@@ -1,0 +1,321 @@
+/* -------------------------------- 
+
+File#: _1_chameleonic-header
+Title: Chameleonic Header
+Descr: Header component whose theme adapts on scroll to the underneath section
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+/* reset */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  * {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: system-ui, sans-serif;
+    color: hsl(230, 7%, 23%);
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.2;
+    color: hsl(230, 13%, 9%);
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* 40px */
+  }
+  
+  h2 {
+    font-size: 2.125rem; /* 34px */
+  }
+  
+  h3 {
+    font-size: 1.75rem; /* 28px */
+  }
+  
+  h4 {
+    font-size: 1.375rem; /* 22px */
+  }
+  
+  ol, ul, menu {
+    list-style: none;
+  }
+  
+  button, input, textarea, select {
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+            appearance: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    overflow: auto;
+    vertical-align: top;
+  }
+  
+  a {
+    color: hsl(250, 84%, 54%);
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  img, video, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* -------------------------------- 
+  
+  Icons 
+  
+  -------------------------------- */
+  
+  .cd-icon {
+    --size: 1em;
+    font-size: var(--size);
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    color: inherit;
+    fill: currentColor;
+    line-height: 1;
+    flex-shrink: 0;
+    max-width: initial;
+  }
+  
+  .cd-icon use { /* SVG symbols - enable icon color corrections */
+    color: inherit;
+    fill: currentColor;
+  }
+  
+  /* -------------------------------- 
+  
+  Component 
+  
+  -------------------------------- */
+  
+  :root {
+    --cha-header-height: 54px;
+  
+    /* light theme colors */
+    --color-primary: hsl(250, 84%, 54%);
+    --color-bg: hsl(0, 0%, 100%);
+    --color-contrast-medium: hsl(225, 4%, 47%);
+    --color-contrast-high: hsl(230, 7%, 23%);
+    --color-contrast-higher: hsl(230, 13%, 9%);
+  }
+  
+  [data-theme="dark"] { /* update the color variables on dark mode */
+    --color-primary: hsl(342, 89%, 48%);
+    --color-bg: hsl(232, 11%, 15%);
+    --color-contrast-medium: hsl(231, 3%, 57%);
+    --color-contrast-high: hsl(240, 5%, 82%);
+    --color-contrast-higher: hsl(240, 100%, 99%);
+  }
+  
+  @media (min-width: 64rem) {
+    :root {
+      --cha-header-height: 70px;
+    }
+  }
+  
+  .cha-header-clip {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    pointer-events: none;
+  }
+  
+  .cha-section {
+    background-color: var(--color-bg);
+    color: var(--color-contrast-high);
+  }
+  
+  .cha-header {
+    height: var(--cha-header-height);
+    background-color: var(--color-bg);
+    pointer-events: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+  
+  .cha-header__logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cha-header__nav {
+    display: none;
+  }
+  
+  .cha-header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .cha-header__nav-link, .cha-header__nav-btn {
+    font-size: 0.9375rem;
+  }
+  
+  .cha-header__nav-link {
+    color: var(--color-contrast-higher);
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+  .cha-header__nav-link:hover {
+    opacity: 0.5;
+  }
+  
+  .cha-header__trigger, .cha-modal__close {
+    display: block;
+  }
+  
+  .cha-header__trigger .cd-icon,
+  .cha-modal__close .cd-icon {
+    --size: 24px;
+    display: block;
+    color: var(--color-contrast-higher);
+  }
+  
+  .cha-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-bg);
+    display: none;
+    z-index: 15;
+  }
+  
+  .cha-modal__inner {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .cha-modal__header {
+    background-color: var(--color-bg);
+    padding: 0 1.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: var(--cha-header-height);
+  }
+  
+  .cha-modal__label {
+    color: var(--color-contrast-medium);
+  }
+  
+  .cha-modal__nav {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cha-modal__nav-list {
+    display: grid;
+    gap: 0.25rem;
+  }
+  
+  .cha-modal__nav-link {
+    font-size: 1.375rem;
+    text-decoration: none;
+    display: block;
+    color: var(--color-contrast-higher);
+    padding: 0.25rem 0;
+  }
+  
+  @media (min-width: 64rem) {
+    .cha-header__nav {
+      display: block;
+    }
+  
+    .cha-header__trigger, .cha-modal {
+      display: none !important;
+    }
+  }
+  
+  /* -------------------------------- 
+  
+  Utilities 
+  
+  -------------------------------- */
+  
+  .cd-container {
+    width: calc(100% - 3rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cd-max-width-sm {
+    max-width: 48rem;
+  }
+  
+  .cd-max-width-lg {
+    max-width: 80rem;
+  }
+  
+  .cd-position-relative {
+    position: relative;
+  }
+  
+  .cd-padding-y-3xl {
+    padding-top: 10.75rem;
+    padding-bottom: 10.75rem;
+  }
+  
+  .cd-height-100\% {
+    height: 100%;
+  }
+  
+  .cd-flex {
+    display: flex;
+  }
+  
+  .cd-block {
+    display: block;
+  }
+  
+  .cd-justify-between {
+    justify-content: space-between;
+  }
+  
+  .cd-items-center {
+    align-items: center;
+  }

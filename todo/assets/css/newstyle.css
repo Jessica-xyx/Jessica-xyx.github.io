@@ -1,0 +1,71 @@
+.cd-timeline {
+    overflow: hidden;
+    padding: var(--space-lg) 0;
+  }
+  
+  .cd-timeline__container {
+    position: relative;
+    padding: var(--space-md) 0;
+  
+    &::before { // this is the timeline vertical line
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 18px;
+      height: 100%;
+      width: 4px;
+      background: var(--cd-color-2);
+    }
+  }
+  .cd-timeline__block {
+    display: flex;
+  
+    @include breakpoint(md) {
+      &:nth-child(even) {
+        flex-direction: row-reverse; // for even blocks -> lay out content from right to left
+      }
+    }
+  }
+  
+  .cd-timeline__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  
+    @include breakpoint(md) {
+        order: 1; // flex order -> place the image after cd-timeline__content
+     }
+  }
+  
+  .cd-timeline__content {
+     flex-grow: 1; // expand element so that it takes up all the available space inside its parent
+  
+     @include breakpoint(md) {
+        width: 45%;
+        flex-grow: 0; // prevent element from growing inside its parent
+     }
+  }
+  @include breakpoint(md) { // animations
+    .cd-timeline__img--hidden, .cd-timeline__content--hidden {
+      visibility: hidden;
+    }
+  
+    .cd-timeline__img--bounce-in {
+      animation: cd-bounce-1 0.6s;
+    }
+  }
+  
+  @keyframes cd-bounce-1 {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);    
+    }
+  }

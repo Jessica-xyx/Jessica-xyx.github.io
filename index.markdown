@@ -7,11 +7,41 @@ description: 见到你很高兴
 
 <section class="about-me inner">
   <h1>
-    <span class="hello">
-      <em>关于我</em>
-    </span>
+    <!-- <span class="hello">
+      <em>人生目标</em>
+    </span> -->
+    <blockquote2>
+    “能做到生活工作平衡、有丰富的兴趣爱好和个人生活、充分照顾家庭，并且在不需要加班的前提下出色的完成工作任务。”
+    </blockquote2>
+
   </h1>
 </section>
+
+<!-- <section class="about-me inner">
+  <h1>
+    <span class="hello">
+      <em>“能做到生活工作平衡、有丰富的兴趣爱好和个人生活、充分照顾家庭，并且在不需要加班的前提下出色的完成工作任务。”</em>
+    </span>
+  </h1>
+</section> -->
+
+<section class="inner">
+  <div class="post-recents-in-index">
+    <strong>Recent blog posts</strong>
+  </div>
+  <blockquote>
+    <ul class="blog-list">
+      {% for post in site.posts limit:10 %}
+      <li class="post-list-in-index">
+      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </blockquote>
+  <div class="spacer"></div>
+</section>
+
 
 <!-- <section class="about-me inner">
   <p>
@@ -75,22 +105,7 @@ description: 见到你很高兴
 
 
 
-<section class="inner">
-  <div class="post-recents-in-index">
-    <strong>Recent blog posts</strong>
-  </div>
-  <blockquote>
-    <ul class="blog-list">
-      {% for post in site.posts limit:5 %}
-      <li class="post-list-in-index">
-      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small>
-      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </blockquote>
-  <div class="spacer"></div>
-</section>
+
 
 <section class="inner">
   <p>
