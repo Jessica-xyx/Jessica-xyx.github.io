@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 向量极大线性无关子组
-categories: [矩阵分析]
+categories: [线性代数/矩阵分析]
 tags: 
 ---
 

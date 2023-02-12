@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 线性空间
-categories: [矩阵分析]
+categories: [线性代数/矩阵分析]
 tags: 
 ---
 
