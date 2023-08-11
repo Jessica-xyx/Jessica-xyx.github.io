@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 对称矩阵
-categories: [数学]
+categories: 数学
 tags:
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

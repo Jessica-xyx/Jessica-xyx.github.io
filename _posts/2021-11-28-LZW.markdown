@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LZW算法
-categories: [算法与刷题]
+categories: 算法与刷题
 tags: 信号
 ---
 

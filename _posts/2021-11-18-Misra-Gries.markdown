@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Misra-Gries算法求最频繁项
-categories: [算法与刷题]
+categories: 算法与刷题
 tags: 大数据算法
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

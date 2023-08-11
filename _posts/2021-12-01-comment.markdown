@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 添加gittalk评论系统
-categories: [博客]
+categories: 博客
 tags: 
 ---
 

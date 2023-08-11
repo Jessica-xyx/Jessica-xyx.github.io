@@ -1,7 +1,7 @@
 ---
 layout: post
 title: jekyll默认生成的博客里没有_layout文件夹
-categories: [博客]
+categories: 博客
 tags: 
 ---
 命令行中输入

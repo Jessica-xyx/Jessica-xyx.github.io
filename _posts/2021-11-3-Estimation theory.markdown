@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 估计理论
-categories: [估计理论]
+categories: 估计理论
 tags: 
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

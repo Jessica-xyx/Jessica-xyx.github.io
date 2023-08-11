@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 组合数学基础
-categories: [组合数学]
+categories: 组合数学
 tags: 
 ---
 

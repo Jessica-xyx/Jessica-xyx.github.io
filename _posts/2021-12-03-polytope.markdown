@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Introduction to Convex Polytopes
-categories: [凸多胞形]
+categories: 凸多胞形
 tags: 
 ---
 
