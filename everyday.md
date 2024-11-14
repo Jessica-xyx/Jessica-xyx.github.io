@@ -13,6 +13,84 @@ permalink: /每日记录/
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
             <ul class="timeline">
+
+
+
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>2024/10/23</span>
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">写写写</h3>
+                        <p>
+                        
+                        <ul>
+                            <li>今天的目标是写5道leetcode</li>
+                        </ul>
+
+
+                        </p>
+                            
+                    </div>
+                </li>
+
+
+
+
+
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>2024/10/20</span>
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">记一下</h3>
+                        <p>
+                        
+                        <ul>
+                            <li>一年过去了，并没有发出来论文...</li>
+                            <li>看来写日记就是有用，我去年8月居然跑了MADDPG的代码？我敢说我到今天才明白MADDPG是怎么回事...</li>
+
+                        </ul>
+
+
+                        </p>
+                            
+                    </div>
+                </li>
+                
+
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>2023/08/26</span>
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">科研</h3>
+                        <p>
+                        
+                        <ul>
+                            <li>看epc那篇论文，又把introduction和related work看一遍，然后看到background就去看MADDPG了，然后跑了MADDPG的代码，然后又开始看策略梯度的公式推导，现在看到了Markov chain Monte Carlo</li>
+                            <ul>
+                            <li><a href="https://juejin.cn/post/7243413799348518968">MADDPG一个讲的很好的博客</a></li>
+                            <li><a href="https://tomaxent.com/2019/04/14/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6%E6%96%B9%E6%B3%95/">策略梯度一个讲的很好的博客</a></li>
+                            <li><a href="https://lilianweng.github.io/posts/2018-04-08-policy-gradient/">策略梯度一个讲的很好的博客</a></li>
+                            <li><a href="https://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/">Markov chain Monte Carlo</a></li>
+                            </ul>
+                        </ul>
+
+                        <ul>
+                        <li>研究了一下2024校招，还是发论文才是硬道理</li>
+                        </ul>
+
+                        </p>
+                            
+                    </div>
+                </li>
+
+
+
                 <li class="timeline-item">
                     <div class="timeline-info">
                         <span>2023/07/17</span>
