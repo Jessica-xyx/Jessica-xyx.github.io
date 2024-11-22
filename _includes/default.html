@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
+  
+  <head>
   <style>@import url(/public/css/syntax/{{ site.highlighter-theme }}.css);</style>
   <title>{{ site.title }}</title>
   <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">  
+</head>
+  
+  
   <body>
   	<div class="container"> 
 		<div class="sidebar">
