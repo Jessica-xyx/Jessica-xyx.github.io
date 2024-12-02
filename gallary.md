@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: page
 title: 生活照片
 permalink: /生活照片/
----
+--- -->
 
 <link rel="stylesheet" href="/public/css/my/gallary.css">
 
