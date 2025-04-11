@@ -42,6 +42,7 @@ bundle add webrick
   **改hosts文件吧，比较快**，https://blog.csdn.net/CynthiaLLL/article/details/106611164
 
 **这是个玄学问题，有时候关了也能push上去，奥义是多push几次。。。**
+**[超时的解决办法]({% post_url 2025-02-06-github %})**
 
 - 插入公式
   在markdown文档首部添加
